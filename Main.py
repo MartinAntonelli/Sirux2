@@ -9,6 +9,7 @@ def main():
 
     version_actual = obtener_version_actual()
     version_repositorio = obtener_version_repositorio()
+    print(version_actual, version_repositorio)
 
     if version_actual < version_repositorio:
         print('Hay una nueva versión disponible. Actualizando...')

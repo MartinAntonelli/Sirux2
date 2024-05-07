@@ -13,14 +13,14 @@ def obtener_version_repositorio():
     url = 'https://raw.githubusercontent.com/MartinAntonelli/Sirux2/main/version.py'
     response = requests.get(url)
     version_line = response.text.split('\n')[0]
-    version = version_line.split('=')[1].strip().strip("'")
+    version = version_line
     return version
 
 
 def actualizar_app():
     repo_url = 'https://github.com/MartinAntonelli/Sirux2'
-    repo_local_path = 'C:\Program Files (x86)\Sirux'
-    repo_temp_path = 'C:\Program Files (x86)\Sirux\Actualizaciones'
+    repo_local_path = r'C:\Users\Usuario\OneDrive\Escritorio\GPower\Proyecto GPower\Traducciones\Sirux2\Sirux2_0'
+    repo_temp_path = r'C:\Users\Usuario\OneDrive\Escritorio\GPower\Proyecto GPower\Traducciones\Sirux2\Sirux2_0\Act'
 
 
     version_actual = obtener_version_actual()
