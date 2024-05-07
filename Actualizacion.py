@@ -10,7 +10,7 @@ def obtener_version_actual():
 
 def obtener_version_repositorio():
 
-    url = 'https://raw.githubusercontent.com/tu_usuario/tu_repositorio/master/version.py'
+    url = 'https://raw.githubusercontent.com/MartinAntonelli/Sirux2/main/version.py'
     response = requests.get(url)
     version_line = response.text.split('\n')[0]
     version = version_line.split('=')[1].strip().strip("'")
@@ -18,7 +18,7 @@ def obtener_version_repositorio():
 
 
 def actualizar_app():
-    repo_url = 'https://github.com/MartinAntonelli/SIRUX'
+    repo_url = 'https://github.com/MartinAntonelli/Sirux2'
     repo_local_path = 'C:\Program Files (x86)\Sirux'
     repo_temp_path = 'C:\Program Files (x86)\Sirux\Actualizaciones'
 
